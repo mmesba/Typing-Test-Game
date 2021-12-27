@@ -4,7 +4,7 @@
   "description": "Simple Typing Test Game backed by Node Js, express js, and written with vanilla javaScript. I used popular MVC pattern with ejs in this project.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/mmesba/Typing-Test-Game.git",
