@@ -1,9 +1,10 @@
 {
   "name": "typing-test-game",
   "version": "1.0.0",
-  "description": "Simple Typing Test Game backed by Node Js, express js, and written with vanilla javaScript. I used popular MVC patter in this project.",
+  "description": "Simple Typing Test Game backed by Node Js, express js, and written with vanilla javaScript. I used popular MVC pattern with ejs in this project.",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/mmesba/Typing-Test-Game.git",
@@ -12,7 +13,8 @@
     "MVC",
     "express",
     "typingTest",
-    "yarn"
+    "yarn",
+    "ejs"
   ],
   "author": "Mohammad Mesbaul Haque",
   "license": "MIT",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/mmesba/Typing-Test-Game#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
