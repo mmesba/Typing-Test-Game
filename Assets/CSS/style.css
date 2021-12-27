@@ -77,6 +77,6 @@ body, .test, .quote-input {
 }
 
 .incorrect {
-    color: rgb(31, 19, 19);
+    color: rgb(230, 10, 10);
     text-decoration: underline;
 }
