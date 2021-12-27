@@ -22,7 +22,11 @@ app.get('/', (req, res)=>{
     res.render('index');
 })
  
- 
+//  404 handler
+app.all('*', (req, res)=>{
+    res.render('404.ejs', {url : req.originalUrl})
+})
+
 // Server Creation
 app.listen(process.env.PORT || 3000, ()=>{
     console.log(`Listening Typing Test App`);
