@@ -7,7 +7,7 @@
  */
 
 // require api link
-const   Quote_Url = 'http://api.quotable.io/random';
+const   Quote_Url = 'https://api.quotable.io/random';
 
 const quoteDisplayElement = document.getElementById('quoteDisplay');
 const quoteInputElement = document.getElementById('quoteInput');

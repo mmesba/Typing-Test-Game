@@ -8,6 +8,7 @@
  
 // Dependencies.
  const express = require('express');
+ const path = require('path');
  
 // App object or Module scaffolding.
  const app = express();
@@ -16,10 +17,16 @@
 app.set('view engine', 'ejs');
 
 // Initiate Static directory
-app.use('/Assets', express.static('./Assets'))
+app.use('/public', express.static('./public'))
+app.use(express.static(path.join(__dirname, 'public/Js')));
+
 
 app.get('/', (req, res)=>{
     res.render('index');
+})
+
+app.get('/static',(req,res)=>{
+    res.sendFile(path.join(__dirname, "/index.html"));
 })
  
 //  404 handler
